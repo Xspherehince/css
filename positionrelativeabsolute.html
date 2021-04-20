@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positionrelativeabsolute</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            position: relative;
+
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .left{
+            font-size: 25px;
+            border: none;
+            background-color: goldenrod;
+            color: honeydew;
+            position: absolute;
+            left: 0;
+            top: 40%;
+
+
+        }
+        button{
+            display: none;
+        }
+
+        .container:hover button{
+            display: block;
+        }
+        .container:hover{
+            cursor: pointer
+        }
+        .right{
+            font-size: 25px;
+            border: none;
+            background-color: hotpink;
+            color: lavenderblush;
+            position: absolute;
+            right: 0;
+            top: 40%;
+
+        }
+        .text{
+            position: absolute;
+            top: 90%;
+            width: 100%;
+            font-size: 20px;
+            color: rgb(0, 255, 149);
+            text-align: center;
+            font-family: serif;
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="images/naruto sasuke.jpg" alt="no image">
+    <button class="left">&lt;</button>
+    <button class="right">&gt;</button>
+    <div class="text">hello naruto</div>
+    </div>
+</body>
+</html>
